@@ -1,3 +1,3 @@
 # SqliteEmploeeSalaryApp
-Sqlit4e database with login &amp; register android 
+Sqlit4e database android
 using listview adapter
