@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/main_activity_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="text" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/main_activity_salary_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="salary"
+        android:inputType="number" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_activity_insert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert" />
+
+    <RadioGroup
+        android:id="@+id/search_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/main_activity_all_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:checked="true"
+            android:selectAllOnFocus="false"
+            android:text="all" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/main_activity_more_or_equal_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="more than or equal" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/main_activity_less_than_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="less than 1000" />
+
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/main_activity_employees_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
